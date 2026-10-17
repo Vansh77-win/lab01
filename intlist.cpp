@@ -90,7 +90,7 @@ double IntList::average() const {
         count++;
         curr = curr->next;
     }
-    return (sum) / count;
+    return static_cast<double>(sum) / count;
 }
 
 // inserts value as new node at beginning of list
